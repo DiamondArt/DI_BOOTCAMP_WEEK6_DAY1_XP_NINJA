@@ -199,17 +199,20 @@ class Person {
     private char gender;
 
     Person() {
+         super();
         this.name = "Unknown";
         this.age = 0;
         this.gender = 'U';
     }
     Person(String _name, int _age, char _gender) {
+        super();
         this.name = _name;
         this.age = _age;
         this.gender = _gender;
     }
 
     Person(String _name, int _age ) {
+        super();
         this();
         this.name = _name;
         this.age = _age;
